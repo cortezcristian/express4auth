@@ -1,5 +1,74 @@
 extends layout
 
 block content
-  h1 Express 4 Auth
-  p Express 4.x Passport Auth Demo
+  h1.hide Express 4 Auth
+  .row(style="padding-top:20px")
+    .col-lg-6
+      .panel.panel-default
+        .panel-heading Login
+        .panel-body
+          p Express 4.x Passport Auth Demo
+          #login
+            .list-group
+              a.list-group-item(href="")
+                i.fa.fa-github(style="padding-right:10px")
+                | Github
+              a.list-group-item(href="")
+                i.fa.fa-facebook-square(style="padding-right:10px")
+                | Facebook
+              a.list-group-item(href="")
+                i.fa.fa-linkedin-square(style="padding-right:10px")
+                | Linkedin
+              a.list-group-item(href="")
+                i.fa.fa-google-plus(style="padding-right:10px")
+                | Google+
+          form#login-form(action="/login",method="post",role="form")
+            .form-group
+              label.col-md-4.control-label(for="email") Email:
+              .col-md-8
+                input#email.form-control(type="email", placeholder="demo@demo.com")
+                span.help-block
+            .form-group
+              label.col-md-4.control-label(for="password") Password:
+              .col-md-8
+                input#password.form-control(type="password", placeholder="Password")
+                span.help-block
+            .form-group
+              .col-md-4
+                label.control-label.hide(for="login-btn") Login:
+              .col-md-8
+                button.btn.btn-primary#login-btn(type="submit") Login
+    .col-lg-6
+      .panel.panel-default
+        .panel-heading Simple registration form
+        .panel-body
+          p Register
+          form#register-form(action="/register",method="post",role="form")
+            .form-group
+              label.col-md-4.control-label(for="reg-email") Email:
+              .col-md-8
+                input#reg-email.form-control(type="email", placeholder="demo@demo.com")
+                span.help-block
+            .form-group
+              label.col-md-4.control-label(for="reg-password") Password:
+              .col-md-8
+                input#reg-password.form-control(type="password", placeholder="Password")
+                span.help-block
+            .form-group
+              label.col-md-4.control-label(for="passwordrepeat") Repeat Password:
+              .col-md-8
+                input#passwordrepeat.form-control(type="password", placeholder="Repeat Password")
+                span.help-block
+            .form-group
+              .col-md-4
+                label.control-label.hide(for="register-btn") Register:
+              .col-md-8
+                button.btn.btn-primary#register-btn(type="submit") Register
+              
+  style.
+    .control-label {
+        text-align: right;
+        padding-top: 7px;
+        margin-top: 0;
+        margin-bottom: 0;    
+    }
