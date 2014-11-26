@@ -30,6 +30,22 @@ html(lang='en')
               a(href='/register') Register
             li
               a(href='/admin') Admin
+    - if (typeof flash !== 'undefined' && flash !== null)
+      - if (typeof flash.error !== 'undefined' && flash.error.length)
+        - each msg in flash.error
+            div.alert.alert-danger(role="alert")= msg
+
+      - if (typeof flash.warning !== 'undefined' && flash.warning.length)
+        - each msg in flash.warning
+            div.alert.alert-warning(role="alert")= msg
+
+      - if (typeof flash.info !== 'undefined' && flash.info.length)
+        - each msg in flash.info
+            div.alert.alert-info(role="alert")= msg
+
+      - if (typeof flash.success !== 'undefined' && flash.success.length)
+        - each msg in flash.success
+            div.alert.alert-success(role="alert")= msg
     block content
     script(src='/components/jquery/dist/jquery.min.js')
     script(src='/components/bootstrap/dist/js/bootstrap.min.js')

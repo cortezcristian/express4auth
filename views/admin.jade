@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  h1.hide Express 4 Auth
+  .row(style="padding-top:20px")
+    .col-sm-6.col-sm-offset-3
+      .panel.panel-default
+        .panel-heading Login
+        .panel-body
+          form#login-form(action="/admin",method="post",role="form")
+            .form-group
+              label.col-md-4.control-label(for="email") Email:
+              .col-md-8
+                input#email.form-control(type="email", name="email", placeholder="demo@demo.com")
+                span.help-block
+            .form-group
+              label.col-md-4.control-label(for="password") Password:
+              .col-md-8
+                input#password.form-control(type="password", name="password", placeholder="Password")
+                span.help-block
+            .form-group
+              .col-md-4
+                label.control-label.hide(for="login-btn") Login:
+              .col-md-8
+                button.btn.btn-primary#login-btn(type="submit") Login
+            .form-group
+              .col-md-4
+              .col-md-8
+                p(style="padding-top:10px") Need an account? 
+                  a(href="/register") Register
+  style.
+    .control-label {
+        text-align: right;
+        padding-top: 7px;
+        margin-top: 0;
+        margin-bottom: 0;    
+    }
