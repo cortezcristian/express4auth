@@ -9,5 +9,5 @@ Express 4.x Passport bcrypt example
 ### Nice-to-have
 
 - reCaptcha
-- admin Panel
+- admin Panel, write json config
 - Link Accounts

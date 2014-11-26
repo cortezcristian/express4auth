@@ -26,18 +26,23 @@ block content
             .form-group
               label.col-md-4.control-label(for="email") Email:
               .col-md-8
-                input#email.form-control(type="email", placeholder="demo@demo.com")
+                input#email.form-control(type="email", name="email", placeholder="demo@demo.com")
                 span.help-block
             .form-group
               label.col-md-4.control-label(for="password") Password:
               .col-md-8
-                input#password.form-control(type="password", placeholder="Password")
+                input#password.form-control(type="password", name="password", placeholder="Password")
                 span.help-block
             .form-group
               .col-md-4
                 label.control-label.hide(for="login-btn") Login:
               .col-md-8
                 button.btn.btn-primary#login-btn(type="submit") Login
+            .form-group
+              .col-md-4
+              .col-md-8
+                p(style="padding-top:10px") Need an account? 
+                  a(href="/register") Register
     .col-lg-6
       .panel.panel-default
         .panel-heading Register
@@ -47,17 +52,17 @@ block content
             .form-group
               label.col-md-4.control-label(for="reg-email") Email:
               .col-md-8
-                input#reg-email.form-control(type="email", placeholder="demo@demo.com")
+                input#reg-email.form-control(type="email", name="email", placeholder="demo@demo.com")
                 span.help-block
             .form-group
               label.col-md-4.control-label(for="reg-password") Password:
               .col-md-8
-                input#reg-password.form-control(type="password", placeholder="Password")
+                input#reg-password.form-control(type="password", name="password", placeholder="Password")
                 span.help-block
             .form-group
               label.col-md-4.control-label(for="passwordrepeat") Repeat Password:
               .col-md-8
-                input#passwordrepeat.form-control(type="password", placeholder="Repeat Password")
+                input#passwordrepeat.form-control(type="password", name="passwordrepeat", placeholder="Repeat Password")
                 span.help-block
             .form-group
               .col-md-4
@@ -73,6 +78,11 @@ block content
                 label.control-label.hide(for="register-btn") Register:
               .col-md-8
                 button.btn.btn-primary#register-btn(type="submit") Register
+            .form-group
+              .col-md-4
+              .col-md-8
+                p(style="padding-top:10px") Already have an account? 
+                  a(href="/login") Login
               
   style.
     .control-label {

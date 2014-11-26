@@ -14,7 +14,12 @@
     "debug": "~1.0.2",
     "jade": "~1.3.1",
     "bcrypt-nodejs": "0.0.3",
-    "mongoose": "~3.8.19"
+    "mongoose": "~3.8.19",
+    "connect-flash": "~0.1.1",
+    "passport-local": "~1.0.0",
+    "passport": "~0.2.1",
+    "express-session": "~1.9.2",
+    "mongoose-fixtures": "0.0.1"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
