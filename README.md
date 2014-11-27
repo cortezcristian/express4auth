@@ -15,6 +15,10 @@ Express 4.x Passport bcrypt example
 - Mails node-mailer, send-grid
 - Password recovery
 
+### Feature list
+- Login via social network without confirming the account let the user use the site only for 24hs, after that account will be locked until e-mail is confirmed.
+- If user log-in with SN and already has the same e-mail registered we link the account.
+
 ### Use Cases
 
 <table>
