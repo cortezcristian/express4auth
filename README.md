@@ -34,11 +34,15 @@ Express 4.x Passport bcrypt example
         <td align="left">As a visitor user will fill the registration form</td>
     </tr>
     <tr>
-        <td align="left"><strong>Pre conditions</strong></td>
+        <td align="left"><strong>Actors</strong></td>
+        <td align="left">Visitor</td>
+    </tr>
+    <tr>
+        <td align="left"><strong>Pre-conditions</strong></td>
         <td align="left"><ol class="task-list"><li>Visitor should have an email</li></ol></td>
     </tr>
     <tr>
-        <td align="left"><strong>Standard flow</strong></td>
+        <td align="left"><strong>Standard Flow</strong></td>
         <td align="left">
             <ol class="task-list">
                 <li>Visitor goes to /register</li>
@@ -48,7 +52,7 @@ Express 4.x Passport bcrypt example
         </td>
     </tr>
     <tr>
-        <td align="left"><strong>Post conditions</strong></td>
+        <td align="left"><strong>Post-conditions</strong></td>
         <td align="left">
             <ol class="task-list">
                 <li>The site shows a message for user to confirm the account</li>
@@ -57,8 +61,24 @@ Express 4.x Passport bcrypt example
         </td>
     </tr>
     <tr>
+        <td align="left"><strong>Alternative courses</strong></td>
+        <td align="left">
+            <ul class="task-list">
+                <li>A</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td align="left"><strong>Exceptions</strong></td>
+        <td align="left">
+            <ul class="task-list">
+                <li>E</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
         <td align="left"><strong>Open Issues:</strong></td>
-        <td align="left"></td>
+        <td align="left">None</td>
     </tr>
 </tbody>
 </table>
