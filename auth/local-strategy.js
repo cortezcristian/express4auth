@@ -36,6 +36,7 @@ passport.use('UserLogin', new LocalStrategy(
     passwordField: 'password'
   },
   function(username, password, done) {
+    username = (username) ? username.toLowerCase() : "";
     Users.findOne({ email:username }, function(err, usr) {
       if (err) { return done(err); }
       if (!usr) {
@@ -45,6 +46,35 @@ passport.use('UserLogin', new LocalStrategy(
         return done(null, false, { message: 'Your password is incorrect.' });
       }
       return done(null, usr);
+    });
+  }
+));
+
+passport.use('UserRegister', new LocalStrategy(
+  {
+    usernameField: 'email',
+    passwordField: 'password',
+    passReqToCallback : true
+  },
+  function(req, username, password, done) {
+    username = (username) ? username.toLowerCase() : "";
+    process.nextTick(function() {
+      if (!req.user) {
+        // Not logged in
+        Users.findOne({ email:username }, function(err, usr) {
+          if (err) { return done(err); }
+          if (usr) {
+            return done(null, false, { message: 'Already taken' });
+          }
+          if (!usr.authenticate(password)) {
+            return done(null, false, { message: 'Your password is incorrect.' });
+          }
+          return done(null, usr);
+        });
+      } else {
+         // Ignoring logged int user
+         return done(null, req.user);
+      }
     });
   }
 ));
