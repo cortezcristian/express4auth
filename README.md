@@ -18,6 +18,7 @@ Express 4.x Passport bcrypt example
 ### Use Cases
 
 |**ID**|CU-01 |
+|:----|:----|
 |**Title**| Register |
 |**Description**| As a visitor user will fill the login form |
 |**Pre conditions**| <ol><li>Visitor should have an email</li></ol> |
