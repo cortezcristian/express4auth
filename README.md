@@ -5,6 +5,8 @@ Express 4.x Passport bcrypt example
 
 ![Auth Flow](https://raw.githubusercontent.com/cortezcristian/express4auth/master/pics/auth-flow.png)
 
+![Demo Site](https://raw.githubusercontent.com/cortezcristian/express4auth/master/pics/demo-site.png)
+
 
 ### Nice-to-have
 
