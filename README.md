@@ -31,7 +31,7 @@ Express 4.x Passport bcrypt example
     </tr>
     <tr>
         <td align="left"><strong>Description</strong></td>
-        <td align="left">As a visitor user will fill the registration form</td>
+        <td align="left">Unregistered visitor will submit the registration form</td>
     </tr>
     <tr>
         <td align="left"><strong>Actors</strong></td>
