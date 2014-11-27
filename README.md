@@ -27,7 +27,7 @@ Express 4.x Passport bcrypt example
 <tbody>
     <tr>
         <td align="left"><strong>Title</strong></td>
-        <td align="left">Register</td>
+        <td align="left">Registration Submit</td>
     </tr>
     <tr>
         <td align="left"><strong>Description</strong></td>
@@ -55,6 +55,10 @@ Express 4.x Passport bcrypt example
                 <li>An email is sent, with a confirmation link</li>
             </ol>
         </td>
+    </tr>
+    <tr>
+        <td align="left"><strong>Open Issues:</strong></td>
+        <td align="left"></td>
     </tr>
 </tbody>
 </table>
