@@ -19,7 +19,8 @@
     "passport-local": "~1.0.0",
     "passport": "~0.2.1",
     "express-session": "~1.9.2",
-    "mongoose-fixtures": "0.0.1"
+    "mongoose-fixtures": "0.0.1",
+    "recaptcha": "~1.2.0"
   },
   "devDependencies": {
     "grunt": "~0.4.5",

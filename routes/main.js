@@ -2,6 +2,9 @@ var app = module.parent.exports.app;
 var passport = module.parent.exports.passport;
 var Admins = require('../models/admins.js');
 var Users = require('../models/users.js');
+var Recaptcha = require('recaptcha').Recaptcha;
+var PUBLIC_KEY  = '',
+    PRIVATE_KEY = '';
 
 var adminAuth = function(req, res, next){
     //authorize role
@@ -55,6 +58,7 @@ app.post('/login', function(req, res, next){
 
 app.get('/register', function(req, res){
     var msg = req.flash('message');
-    res.render('register', { title: 'Register', flashmsg: msg});
+    var recaptcha = new Recaptcha(PUBLIC_KEY, PRIVATE_KEY);
+    res.render('register', { title: 'Register', flashmsg: msg, recaptcha_form: recaptcha.toHTML()});
 });
 
