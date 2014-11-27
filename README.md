@@ -22,7 +22,7 @@ Express 4.x Passport bcrypt example
 - If user log-in with SN and already has the same e-mail registered we link the account.
 
 ### Use Cases
-
+![Register Page](https://raw.githubusercontent.com/cortezcristian/express4auth/master/pics/register-page.png)
 <table>
 <thead>
     <tr>
