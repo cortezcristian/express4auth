@@ -12,6 +12,9 @@ Express 4.x Passport bcrypt example
 1. Guest goes to /register fills the form
 2. Check that the user email doesn't exist
 3. Create user, send email
+4. 
+
+- Utils mail sender, gets template name plus variables to replace
 
 ### Nice-to-have
 
