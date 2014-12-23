@@ -8,6 +8,11 @@ Express 4.x Passport bcrypt example
 ![Demo Site](https://raw.githubusercontent.com/cortezcristian/express4auth/master/pics/demo-site.png)
 
 
+### TODO
+1. Guest goes to /register fills the form
+2. Check that the user email doesn't exist
+3. Create user, send email
+
 ### Nice-to-have
 
 - reCaptcha [node-recaptcha](https://github.com/mirhampt/node-recaptcha)
